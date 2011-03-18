@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+templates_dir = File.expand_path("../templates", File.dirname(__FILE__))
+config_file   = ARGV.pop
+templates     = Dir["#{templates_dir}/**/*.mustache"]
+files_map     = templates.map {|file| [file, file.sub(%r[^#{templates_dir}/(.*).mustache], "\\1")] }
+
+abort "Need config file"          unless config_file
+abort "Config file doesn't exist" unless File.exist?(config_file)
+
+files_map.each do |template, generated|
+  puts "#{template} => #{generated}"
+  `mustache #{config_file} #{template} > #{generated}`
+end

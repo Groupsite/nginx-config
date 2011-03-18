@@ -1,0 +1,9 @@
+---
+nginx_etc_path: /etc/nginx
+nginx_log_path: /var/log/nginx
+nginx_run_path: /var/run/nginx
+nginx_lib_path: /var/lib/nginx
+ssl_hosts:
+  - server_name: public-groups.nea.org
+    file_name:   public-groups.nea.org
+---
