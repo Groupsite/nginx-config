@@ -1,9 +1,9 @@
 upstream groupsite {
-  server www.groupsite.com;
+  server {{upstream_server}};
 }
 
 upstream groupsite-ssl {
-  server www.groupsite.com:443;
+  server {{upstream_server}}:443;
 }
 
 # vim:ft=nginx
