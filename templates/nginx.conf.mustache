@@ -1,9 +1,9 @@
 # vim:ft=nginx
-user www-data;
+user {{user}};
 worker_processes 12;
 
-error_log  /var/log/nginx/error.log;
-pid        /var/run/nginx.pid;
+error_log  {{nginx_log_path}}/error.log;
+pid        {{nginx_pid_path}};
 
 events {
     worker_connections  1024;
@@ -11,31 +11,10 @@ events {
 }
 
 http {
-    include       /etc/nginx/mime.types;
+    include    {{nginx_etc_path}}/mime.types;
 
-    access_log	/var/log/nginx/access.log;
+    access_log {{nginx_log_path}}/access.log;
 
-    include /etc/nginx/conf.d/*.conf;
-    include /etc/nginx/sites-enabled/*.conf;
+    include    {{nginx_etc_path}}/conf.d/*.conf;
+    include    {{nginx_etc_path}}/sites-enabled/*.conf;
 }
-
-# mail {
-#     # See sample authentication script at:
-#     # http://wiki.nginx.org/NginxImapAuthenticateWithApachePhpScript
-# 
-#     # auth_http localhost/auth.php;
-#     # pop3_capabilities "TOP" "USER";
-#     # imap_capabilities "IMAP4rev1" "UIDPLUS";
-# 
-#     server {
-#         listen     localhost:110;
-#         protocol   pop3;
-#         proxy      on;
-#     }
-# 
-#     server {
-#         listen     localhost:143;
-#         protocol   imap;
-#         proxy      on;
-#     }
-# }
