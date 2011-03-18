@@ -8,4 +8,5 @@ upstream_server: www.groupsite.com
 ssl_hosts:
   - server_name: public-groups.nea.org
     file_name:   public-groups.nea.org
+    ip_addr:     127.0.0.1
 ---

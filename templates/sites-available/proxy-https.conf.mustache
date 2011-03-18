@@ -1,13 +1,15 @@
 # HTTPS server
 
+{{#ssl_hosts}}
 server {
   # TODO: template for the next four lines
-  listen               127.0.0.1:443;
-  server_name          public-groups.nea.org;
-  ssl_certificate      /etc/nginx/ssl-crt/public-groups.nea.org.crt;
-  ssl_certificate_key  /etc/nginx/ssl-key/public-groups.nea.org.key;
+  listen               {{ip_addr}}:443;
+  server_name          {{server_name}};
+  ssl_certificate      /etc/nginx/ssl-crt/{{file_name}}.crt;
+  ssl_certificate_key  /etc/nginx/ssl-key/{{file_name}}.key;
   include /etc/nginx/ssl.conf
   location / { proxy_pass http://groupsite-ssl/; }
 }
 
+{{/ssl_hosts}}
 # vim:ft=nginx
