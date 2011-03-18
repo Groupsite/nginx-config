@@ -1,0 +1,110 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: CN=Groupsite.com CA, C=US, ST=Maryland, L=Columbia, O=groupsite.com/emailAddress=bryan@groupsite.com
+        Validity
+            Not Before: Jun  9 14:40:09 2009 GMT
+            Not After : Jun  9 14:40:09 2010 GMT
+        Subject: C=US, ST=Maryland, O=groupsite.com, CN=examinersandbox.examiner.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (4096 bit)
+                Modulus (4096 bit):
+                    00:b2:c5:5b:d6:fc:48:87:fe:94:7a:3a:3d:ae:fc:
+                    44:41:64:81:f9:2d:e1:28:7c:f5:1f:82:b9:f5:cc:
+                    a5:d4:a0:15:38:84:1a:47:b2:2f:ee:c6:db:6d:02:
+                    60:de:22:de:62:e8:a2:77:3f:f1:e2:37:35:7f:70:
+                    fe:02:8b:f8:3c:51:56:a3:5a:38:99:71:d4:0d:d3:
+                    ae:3c:4e:48:ac:2d:9a:b3:f5:e8:c1:85:9b:64:79:
+                    40:a6:46:69:03:d4:91:09:69:37:69:a3:95:39:1c:
+                    b9:25:fa:65:7d:1d:e7:ac:e0:e4:64:84:97:ea:6d:
+                    91:a3:ed:03:61:93:60:56:0e:88:e4:05:4f:2c:52:
+                    09:ee:fd:d9:49:5a:73:03:ad:0b:9a:f9:97:fa:63:
+                    f3:a1:7c:fa:6a:e9:a4:c3:39:88:7c:49:ed:f2:d2:
+                    1c:f2:58:45:95:58:e0:5d:7e:4c:25:be:03:39:4b:
+                    7f:d4:6d:0a:2b:3c:5d:30:16:f2:05:2a:a8:0a:85:
+                    3f:e5:01:93:43:0d:29:6a:b3:d2:7e:88:e7:38:a9:
+                    9d:09:c4:9e:45:6f:b2:26:63:37:99:6a:b0:08:d9:
+                    a2:92:6e:ac:e3:2b:97:47:0e:45:d2:3b:db:50:2c:
+                    18:96:bd:92:d3:2f:e6:09:6d:f2:8c:db:1c:6c:4c:
+                    11:69:f1:c4:dc:ba:b0:b0:ae:03:c9:a3:b4:e8:fa:
+                    0e:83:43:2e:0a:9f:e2:33:98:58:8c:87:50:9b:07:
+                    37:f1:d3:c5:22:32:bd:fb:df:29:9c:1b:3d:ae:28:
+                    72:ed:af:2f:b6:60:29:a0:8f:05:e5:f3:d1:73:52:
+                    30:87:ff:50:99:4b:fb:c1:e4:e1:9c:bb:7e:52:fc:
+                    f6:59:5c:96:a8:03:76:ff:fa:39:12:43:e7:d1:3a:
+                    37:5f:e3:a7:eb:b0:a4:23:92:66:ea:6b:ed:cb:3a:
+                    1e:26:1a:2a:32:d6:71:72:65:26:d1:26:8f:42:a1:
+                    92:d9:e3:e4:2e:b6:3b:af:8a:40:89:17:36:c9:d8:
+                    2f:c4:16:f9:cd:c6:4c:04:c2:b0:8c:45:8d:18:53:
+                    ef:33:55:8d:ac:b6:53:27:a7:de:4e:6a:e7:2e:2a:
+                    64:91:e0:6b:f9:28:9d:db:07:75:02:d0:7c:af:07:
+                    0a:5e:71:de:19:e4:29:ff:f7:5f:74:95:8f:ff:1e:
+                    31:d7:56:ee:c2:0c:7c:12:63:2d:be:77:6e:01:36:
+                    7c:b0:4a:fe:04:7f:7b:91:d9:c8:9f:ea:1e:60:fe:
+                    c6:95:b5:72:40:56:47:62:fd:c1:3d:04:d3:94:1b:
+                    d5:1b:14:eb:15:24:4e:0f:ad:14:f3:2b:c7:b4:25:
+                    8f:cd:03
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                72:92:75:29:C1:99:C4:25:95:F3:4F:BB:77:51:62:0D:67:28:DC:B7
+            X509v3 Authority Key Identifier: 
+                keyid:BA:E3:DF:21:68:E0:4E:CA:22:97:8F:DB:D5:28:8A:40:CB:40:E4:F9
+                DirName:/CN=Groupsite.com CA/C=US/ST=Maryland/L=Columbia/O=groupsite.com/emailAddress=bryan@groupsite.com
+                serial:CD:6F:DC:DF:8C:C8:1F:97
+
+            Netscape CA Revocation Url: 
+                https://www.sial.org/ca-crl.pem
+    Signature Algorithm: sha1WithRSAEncryption
+        00:70:7a:a0:f3:9a:3a:04:87:c5:ad:4f:e7:05:98:3d:2c:6c:
+        8e:93:19:b8:bb:a2:a9:c3:8b:82:84:66:7c:6d:98:1b:a7:fe:
+        b6:29:67:ec:0c:e6:c9:60:36:83:a2:0d:ae:3c:c1:ef:bb:7f:
+        75:ce:0e:32:80:e8:71:d9:93:ac:13:36:71:f9:bd:00:8e:36:
+        f3:c9:b7:94:43:60:a4:3b:fa:5d:7d:b2:d1:e1:31:ff:15:8e:
+        3d:ac:af:ab:e9:57:04:05:cb:52:53:13:40:f8:92:9b:a7:db:
+        15:84:db:29:f9:f5:33:c7:07:e0:04:d2:52:67:5d:bc:08:03:
+        e8:a0:a0:86:54:e5:fd:a9:bc:ce:69:ee:83:17:84:27:c2:ac:
+        98:74:27:a1:66:13:47:39:e8:e6:be:d5:a6:10:2d:1f:ba:ec:
+        dc:4d:88:94:c6:ca:7e:d2:6b:f8:8f:cd:90:09:9d:a6:cf:d3:
+        92:b7:32:4b:f3:43:b9:d4:da:9a:1c:09:a2:cb:91:b9:f2:6c:
+        be:43:1c:80:98:42:77:67:48:85:46:08:cf:b5:99:6e:89:ee:
+        d2:1e:1d:0b:b7:58:66:12:cf:da:f1:dc:d7:f2:12:52:ef:d3:
+        d2:63:1d:5b:ad:33:23:89:75:1d:33:0d:d9:3c:71:d3:f1:1d:
+        6a:86:47:e3
+-----BEGIN CERTIFICATE-----
+MIIFhzCCBG+gAwIBAgIBATANBgkqhkiG9w0BAQUFADCBijEZMBcGA1UEAxMQR3Jv
+dXBzaXRlLmNvbSBDQTELMAkGA1UEBhMCVVMxETAPBgNVBAgTCE1hcnlsYW5kMREw
+DwYDVQQHEwhDb2x1bWJpYTEWMBQGA1UEChMNZ3JvdXBzaXRlLmNvbTEiMCAGCSqG
+SIb3DQEJARYTYnJ5YW5AZ3JvdXBzaXRlLmNvbTAeFw0wOTA2MDkxNDQwMDlaFw0x
+MDA2MDkxNDQwMDlaMF8xCzAJBgNVBAYTAlVTMREwDwYDVQQIEwhNYXJ5bGFuZDEW
+MBQGA1UEChMNZ3JvdXBzaXRlLmNvbTElMCMGA1UEAxMcZXhhbWluZXJzYW5kYm94
+LmV4YW1pbmVyLmNvbTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBALLF
+W9b8SIf+lHo6Pa78REFkgfkt4Sh89R+CufXMpdSgFTiEGkeyL+7G220CYN4i3mLo
+onc/8eI3NX9w/gKL+DxRVqNaOJlx1A3TrjxOSKwtmrP16MGFm2R5QKZGaQPUkQlp
+N2mjlTkcuSX6ZX0d56zg5GSEl+ptkaPtA2GTYFYOiOQFTyxSCe792UlacwOtC5r5
+l/pj86F8+mrppMM5iHxJ7fLSHPJYRZVY4F1+TCW+AzlLf9RtCis8XTAW8gUqqAqF
+P+UBk0MNKWqz0n6I5zipnQnEnkVvsiZjN5lqsAjZopJurOMrl0cORdI721AsGJa9
+ktMv5glt8ozbHGxMEWnxxNy6sLCuA8mjtOj6DoNDLgqf4jOYWIyHUJsHN/HTxSIy
+vfvfKZwbPa4ocu2vL7ZgKaCPBeXz0XNSMIf/UJlL+8Hk4Zy7flL89llclqgDdv/6
+ORJD59E6N1/jp+uwpCOSZupr7cs6HiYaKjLWcXJlJtEmj0Khktnj5C62O6+KQIkX
+NsnYL8QW+c3GTATCsIxFjRhT7zNVjay2Uyen3k5q5y4qZJHga/kondsHdQLQfK8H
+Cl5x3hnkKf/3X3SVj/8eMddW7sIMfBJjLb53bgE2fLBK/gR/e5HZyJ/qHmD+xpW1
+ckBWR2L9wT0E05Qb1RsU6xUkTg+tFPMrx7Qlj80DAgMBAAGjggEgMIIBHDAJBgNV
+HRMEAjAAMB0GA1UdDgQWBBRyknUpwZnEJZXzT7t3UWINZyjctzCBvwYDVR0jBIG3
+MIG0gBS6498haOBOyiKXj9vVKIpAy0Dk+aGBkKSBjTCBijEZMBcGA1UEAxMQR3Jv
+dXBzaXRlLmNvbSBDQTELMAkGA1UEBhMCVVMxETAPBgNVBAgTCE1hcnlsYW5kMREw
+DwYDVQQHEwhDb2x1bWJpYTEWMBQGA1UEChMNZ3JvdXBzaXRlLmNvbTEiMCAGCSqG
+SIb3DQEJARYTYnJ5YW5AZ3JvdXBzaXRlLmNvbYIJAM1v3N+MyB+XMC4GCWCGSAGG
++EIBBAQhFh9odHRwczovL3d3dy5zaWFsLm9yZy9jYS1jcmwucGVtMA0GCSqGSIb3
+DQEBBQUAA4IBAQAAcHqg85o6BIfFrU/nBZg9LGyOkxm4u6Kpw4uChGZ8bZgbp/62
+KWfsDObJYDaDog2uPMHvu391zg4ygOhx2ZOsEzZx+b0AjjbzybeUQ2CkO/pdfbLR
+4TH/FY49rK+r6VcEBctSUxNA+JKbp9sVhNsp+fUzxwfgBNJSZ128CAPooKCGVOX9
+qbzOae6DF4QnwqyYdCehZhNHOejmvtWmEC0fuuzcTYiUxsp+0mv4j82QCZ2mz9OS
+tzJL80O51NqaHAmiy5G58my+QxyAmEJ3Z0iFRgjPtZluie7SHh0Lt1hmEs/a8dzX
+8hJS79PSYx1brTMjiXUdMw3ZPHHT8R1qhkfj
+-----END CERTIFICATE-----
