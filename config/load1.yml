@@ -16,7 +16,7 @@ ssl_hosts:
   - server_name: "groupsite.com *.groupsite.com"
     file_name:   _star_.groupsite.com
     ip_addr:     207.58.157.106
-  - server_name: "collectivex.com *collectivex.com"
+  - server_name: "collectivex.com *.collectivex.com"
     file_name:   _star_.collectivex.com
     ip_addr:     64.131.93.187
 
@@ -63,8 +63,8 @@ ssl_hosts:
   - server_name: www.kix.com
     file_name:   www.kix.com
     ip_addr:     64.131.93.188
-  - server_name: themurgesgroup.com
-    file_name:   themurgesgroup.com
+  - server_name: themurgesegroup.com
+    file_name:   themurgesegroup.com
     ip_addr:     64.131.93.189
   - server_name: www.tylerpeople.com
     file_name:   www.tylerpeople.com
