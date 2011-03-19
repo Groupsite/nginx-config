@@ -2,12 +2,11 @@
 
 {{#ssl_hosts}}
 server {
-  # TODO: template for the next four lines
   listen               {{ip_addr}}:443;
   server_name          {{server_name}};
   ssl_certificate      /etc/nginx/ssl-crt/{{file_name}}.crt;
   ssl_certificate_key  /etc/nginx/ssl-key/{{file_name}}.key;
-  include /etc/nginx/ssl.conf
+  include {{nginx_etc_path}}/ssl.conf
   location / { proxy_pass http://groupsite-ssl/; }
 }
 
