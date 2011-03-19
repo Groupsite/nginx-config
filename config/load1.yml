@@ -6,13 +6,78 @@ nginx_pid_path: /var/run/nginx.pid
 nginx_lib_path: /var/lib/nginx
 upstream_server: www.groupsite.com
 ssl_hosts:
-  - server_name: groups.nea.org
-    file_name:   groups.nea.org
-    ip_addr:     192.168.1.200
+  ### Groupsite owned
+  # TODO: copy key file into place
+  - server_name: "www.groupsite.net"
+    file_name:   _star_.groupsite.com
+    ip_addr:     207.58.157.104
+  - server_name: "groupsite.com *.groupsite.com"
+    file_name:   _star_.groupsite.com
+    ip_addr:     207.58.157.105
+  - server_name: "groupsite.com *.groupsite.com"
+    file_name:   _star_.groupsite.com
+    ip_addr:     207.58.157.106
+  # TODO: copy both files into place
+  # ...even though the collectivex.com cert has expired
+  - server_name: "collectivex.com *collectivex.com"
+    file_name:   _star_.collectivex.com
+    ip_addr:     64.131.93.187
+  # TODO: I dare you to break because of being missing.
+  #- server_name: "groupsite.com *.groupsite.com"
+  #  file_name:   _star_.groupsite.com
+  #  ip_addr:     192.168.1.205
+
+  ### Client owned (and mostly expired or unused!)
+  - server_name: www.unitedundertakers.com
+    file_name:   www.unitedundertakers.com
+    ip_addr:     64.131.93.162
+  - server_name: www.genderationy.net
+    file_name:   www.genderationy.net
+    ip_addr:     64.131.93.163
+  - server_name: "*.empire20.ny.gov"
+    file_name:   _star_.empire20.ny.gov
+    ip_addr:     64.131.93.170
+  - server_name: advocacynetwork.ctehealthcare.com
+    file_name:   advocacynetwork.ctehealthcare.com
+    ip_addr:     64.131.93.171
   - server_name: public-groups.nea.org
     file_name:   public-groups.nea.org
-    ip_addr:     192.168.1.201
+    ip_addr:     64.131.93.177
+  - server_name: groups.nea.org
+    file_name:   groups.nea.org
+    ip_addr:     64.131.93.178
+  - server_name: www.layerxperts.com
+    file_name:   www.layerxperts.com
+    ip_addr:     64.131.93.179
+  - server_name: layerxperts.com
+    file_name:   layerxperts.com
+    ip_addr:     64.131.93.181
+  - server_name: ciocouncil.ny.gov
+    file_name:   ciocouncil.ny.gov
+    ip_addr:     64.131.93.182
+  - server_name: socialmediopolis.com
+    file_name:   socialmediopolis.com
+    ip_addr:     64.131.93.183
+  - server_name: community.indialeadership.net
+    file_name:   community.indialeadership.net
+    ip_addr:     64.131.93.184
+  - server_name: gnice.info
+    file_name:   gnice.info
+    ip_addr:     64.131.93.185
+  - server_name: examinersandbox.examiner.com
+    file_name:   examinersandbox.examiner.com
+    ip_addr:     64.131.93.186
+  - server_name: www.kix.com
+    file_name:   www.kix.com
+    ip_addr:     64.131.93.188
+  - server_name: themurgesgroup.com
+    file_name:   themurgesgroup.com
+    ip_addr:     64.131.93.189
+  - server_name: www.tylerpeople.com
+    file_name:   www.tylerpeople.com
+    ip_addr:     207.58.157.107
   - server_name: icopen.org
     file_name:   icopen.org
-    ip_addr:     192.168.1.202
+    ip_addr:     207.58.157.126
+
 ---
