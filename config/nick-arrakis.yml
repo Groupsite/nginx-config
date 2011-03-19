@@ -14,5 +14,5 @@ ssl_hosts:
     ip_addr:     192.168.1.201
   - server_name: icopen.org
     file_name:   icopen.org
-    ip_addr:     192.168.1.201
+    ip_addr:     192.168.1.202
 ---

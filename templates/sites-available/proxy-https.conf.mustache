@@ -4,10 +4,10 @@
 server {
   listen               {{ip_addr}}:443;
   server_name          {{server_name}};
-  ssl_certificate      /etc/nginx/ssl-crt/{{file_name}}.crt;
-  ssl_certificate_key  /etc/nginx/ssl-key/{{file_name}}.key;
-  include {{nginx_etc_path}}/ssl.conf
-  location / { proxy_pass http://groupsite-ssl/; }
+  ssl_certificate      {{nginx_etc_path}}/ssl-crt/{{file_name}}.crt;
+  ssl_certificate_key  {{nginx_etc_path}}/ssl-key/{{file_name}}.key;
+  include {{nginx_etc_path}}/ssl.conf;
+  location / { proxy_pass https://groupsite-ssl/; }
 }
 
 {{/ssl_hosts}}
