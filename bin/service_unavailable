@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+require 'erb'
+
+reason   = ARGV.shift
+deadline = ARGV.shift
+as_of    = ARGV.shift
+
+abort "bin/service_unavailable 'is down for \"reason\"' ['will be back \"deadline\"'] ['down \"as of\"']" unless reason
+template_path  = File.expand_path("../document_root/503-example.rhtml", File.dirname(__FILE__))
+generated_path = File.expand_path("../document_root/503.html",          File.dirname(__FILE__))
+template       = File.read(template_path)
+result         = ERB.new(template).result(binding)
+File.open(generated_path, "w") {|f| f.write result }
+File.chmod(0644, generated_path)

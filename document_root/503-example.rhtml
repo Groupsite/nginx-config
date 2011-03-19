@@ -1,0 +1,54 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>System down for maintenance</title>
+
+  <style type="text/css">
+    div.outer     { position: absolute; width: 95%; margin: 0 auto; top: 20%; }
+    #gslogo       { float: left; }
+    #speechbubbles { float: right; }
+
+    .DialogBody {
+      margin: 0 auto;
+      max-width: 750px;
+      padding: 10px;
+      text-align: left;
+      background-color: #fff;
+    }
+
+    h1,h2,p { padding: 0; margin: 1em;}
+    h1 { font-size: 160%; color: #308eba; font-weight: bold; }
+    h2 { font-size: 140% }
+    p { padding-left: 70px; }
+    body {
+      background-color: #fff;
+      overflow: hidden;
+      font-family:Arial,Helvetica,sans-serif;
+      color: #30353c;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="outer">
+    <div class="DialogBody">
+      <h1>Sorry!</h1>
+      <h2>Groupsite is undergoing maintenance</h2>
+      <p class="downForMaintenance">
+        The Groupsite.com system is down for <%= reason ? reason : "maintenance" %>
+        as of <%= as_of ? as_of : Time.now.strftime("%H:%M %Z") %>.
+      </p>
+      <p class="backShortly">
+        It should be back <%= deadline ? deadline : "shortly" %>.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

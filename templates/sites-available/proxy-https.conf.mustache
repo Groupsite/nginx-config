@@ -7,7 +7,11 @@ server {
   ssl_certificate      {{nginx_etc_path}}/ssl-crt/{{file_name}}.crt;
   ssl_certificate_key  {{nginx_etc_path}}/ssl-key/{{file_name}}.key;
   include {{nginx_etc_path}}/ssl.conf;
-  location / { proxy_pass https://groupsite-ssl/; }
+  root {{nginx_etc_dir}}/document_root;
+  try_files /503.html @gs_proxy;
+  location @gs_proxy {
+    proxy_pass https://groupsite-ssl;
+  }
 }
 
 {{/ssl_hosts}}
