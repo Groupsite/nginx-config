@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e 
+
+hostname="load1.collectivex.com"
+nginxdir="/etc/nginx/proxy"
+sslkeydir="${nginxdir}/ssl-key"
+backupdir="ssl-key-backup"
+timestampedbackupdir="${backupdir}/$(date +%Y-%m-%d-%H:%M:%S-%Z)"
+
+echo Ensuring ${backupdir} exists
+mkdir -p ${backupdir}
+echo Backing up ssl-key to ${timestampedbackupdir}
+cp -R ssl-key ${timestampedbackupdir}
+echo Pulling remote keys to ssl-key
+rsync -r --delete ${hostname}:${sslkeydir}/ ssl-key
