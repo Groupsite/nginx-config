@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sudo /usr/local/sbin/nginx -tc /etc/nginx/proxy/nginx.conf
