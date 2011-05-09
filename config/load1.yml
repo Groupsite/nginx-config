@@ -54,8 +54,8 @@ ssl_hosts:
   - server_name: community.indialeadership.net
     file_name:   community.indialeadership.net
     ip_addr:     64.131.93.184
-  - server_name: gnice.info
-    file_name:   gnice.info
+  - server_name: network.jobcorp.monster.com
+    file_name:   network.jobcorp.monster.com
     ip_addr:     64.131.93.185
   - server_name: examinersandbox.examiner.com
     file_name:   examinersandbox.examiner.com
